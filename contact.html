@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interesting Graphs | Contact</title>
   <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
   <nav class="nav-bar">
@@ -19,20 +19,27 @@
     <p>This page will be a contact form, of which I have placed a placeholder form</p>
 
     <form action="">
-      <legend>Get in touch</legend>
-      <p>Have some feedback? Please fill in the form</p>
-      <section>
-        <label for="name">Name</label>
-        <input type="text" name="pname" id="name" placeholder="Enter your name:">
-      </section>
-      <section>
-        <label for="email">Email</label>
-        <input type="email" name="pemail" id="email" placeholder="Enter your email:">
-      </section>
-      <section>
-        <label for="message">Message</label>
-        <textarea name="pmessage" id="message" cols="30" rows="10" placeholder="Enter your message:"></textarea>
-      </section>
+      <fieldset>
+        <legend>Get in touch</legend>
+        <p>Have some feedback? Please fill in the form below</p>
+        <ul>
+          <li>
+            <label for="name">Name:</label><br>
+          <input type="text" name="pname" id="name" placeholder="Enter your name:" required minlength="2">
+          </li>
+          <li>
+            <label for="email">Email:</label><br>
+          <input type="email" name="pemail" id="email" placeholder="Enter your email:" required>
+          </li>
+          <li>
+            <label for="message">Message:</label><br>
+          <textarea name="pmessage" id="message" cols="31" rows="5" placeholder="Enter your message:" required></textarea>
+          </li>
+          <li>
+            <button class="sbmt" type="submit">Submit</button>
+          </li>
+        </ul>
+      </fieldset>
     </form>
   </main>
 </body>
