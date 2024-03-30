@@ -11,8 +11,12 @@
   margin: 2rem auto;
   border: rgba(231, 225, 225, 0.836) 4px solid;
   border-radius: 8px;
-  width: 50vw;
+  max-width: 900p;
   /* add drop shadow */
+}
+
+#line-chart {
+  text-align: center;
 }
 
 article p:nth-child(1) {
